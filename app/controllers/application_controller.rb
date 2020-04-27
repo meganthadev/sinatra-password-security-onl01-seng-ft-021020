@@ -37,7 +37,7 @@ class ApplicationController < Sinatra::Base
 	     redirect '/success'
 	   else
 	     
-
+	     
 	get "/success" do
 		if logged_in?
 			erb :success
