@@ -36,7 +36,9 @@ class ApplicationController < Sinatra::Base
 	    session[:user_id] = user.id
 	     redirect '/success'
 	   else
-	     
+	     redirect '/failure'
+	   end 
+	 end   
 	     
 	get "/success" do
 		if logged_in?
