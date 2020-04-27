@@ -30,7 +30,8 @@ class ApplicationController < Sinatra::Base
 		erb :login
 	end
 
-	
+	post "/login" do
+	  
 
 	get "/success" do
 		if logged_in?
