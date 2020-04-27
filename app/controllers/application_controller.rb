@@ -35,7 +35,7 @@ class ApplicationController < Sinatra::Base
 
 		if user && user.authenticate(params[:password])
 			session[:user_id] = user.id
-			redirect to "/account"
+			redirect to "/success"
 		else
 			redirect to "/failure"
 		end
